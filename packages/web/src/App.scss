@@ -1,0 +1,15 @@
+@import "@blueprintjs/core/lib/scss/variables";
+
+main#app {
+  padding-top: $pt-navbar-height;
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  min-height: 100vh;
+  padding-top: 50px;
+
+  > * {
+    flex-grow: 0;
+    flex-shrink: 0;
+  }
+}

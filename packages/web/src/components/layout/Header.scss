@@ -1,0 +1,15 @@
+@import "@blueprintjs/core/lib/scss/variables";
+
+#header {
+  background-color: $light-gray4;
+
+  .bp5-form-group {
+    margin: auto
+  }
+}
+
+.bp5-dark #header {
+  background-color: $dark-gray4;
+  box-shadow: 0 1px 0 rgba(17,20,24,.4);
+}
+

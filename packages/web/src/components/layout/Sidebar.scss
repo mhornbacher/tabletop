@@ -1,0 +1,20 @@
+@import "@blueprintjs/core/lib/scss/variables";
+
+#sidebar {
+
+  background-color: $light-gray4;
+  box-shadow: 1px 0 0 rgba(17,20,24,.15);
+  height: calc(100vh - $pt-navbar-height);
+  overflow-y: auto;
+  padding-bottom: 30px;
+  position: fixed;
+
+  flex-basis: 270px;
+  position: relative;
+  z-index: 10;
+}
+
+.bp5-dark #sidebar {
+  background-color: $dark-gray4;
+  box-shadow: 1px 0 0 rgba(17,20,24,.4);
+}

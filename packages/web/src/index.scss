@@ -34,3 +34,10 @@ body.bp5-dark {
   background-color: $dark-gray4;
   color-scheme: dark;
 }
+
+@media print {
+  body {
+    background-color: white;
+    color-scheme: light;
+  }
+}

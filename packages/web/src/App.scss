@@ -12,4 +12,8 @@ main#app {
     flex-grow: 0;
     flex-shrink: 0;
   }
+
+  @media print {
+    padding-top: 0;
+  }
 }

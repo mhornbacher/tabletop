@@ -1,7 +1,7 @@
 @import "@blueprintjs/core/lib/css/blueprint.css";
 @import "@blueprintjs/icons/lib/css/blueprint-icons.css";
 
-@import "@blueprintjs/core/lib/scss/variables";
+@import "~/src/variables.scss";
 
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
@@ -25,6 +25,9 @@ body {
 
   background-color: $light-gray5;
   color-scheme: light;
+
+  min-width: 1024px;
+  transition: $background-transition;
 }
 
 body.bp5-dark {

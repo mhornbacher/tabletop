@@ -1,4 +1,4 @@
-@import "@blueprintjs/core/lib/scss/variables";
+@import "~/src/variables.scss";
 
 #sidebar {
 
@@ -12,6 +12,8 @@
   flex-basis: 270px;
   position: relative;
   z-index: 10;
+
+  transition: $background-transition;
 }
 
 .bp5-dark #sidebar {

@@ -1,7 +1,8 @@
-@import "@blueprintjs/core/lib/scss/variables";
+@import "~/src/variables.scss";
 
 #header {
   background-color: $light-gray4;
+  transition: $background-transition;
 
   .bp5-form-group {
     margin: auto

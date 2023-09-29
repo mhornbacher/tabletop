@@ -1,4 +1,6 @@
 {
+  "extends": "../../tsconfig.json",
+
   "compilerOptions": {
     "esModuleInterop": true,
 
@@ -22,7 +24,7 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true
   },
-  "include": ["src"],
+  "include": ["src", "../lib/types/Condition.ts", "../lib/types/Dice.ts"],
   "references": [{ "path": "./tsconfig.node.json" }],
   "paths": {
     "~/*": ["./*"],

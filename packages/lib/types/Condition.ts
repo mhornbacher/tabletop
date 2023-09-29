@@ -1,4 +1,4 @@
-export type ConditionType = "blinded"
+export type Condition = "blinded"
   | "charmed"
   | "deafened"
   | "exhaustion"

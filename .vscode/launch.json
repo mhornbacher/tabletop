@@ -1,21 +1,30 @@
 {
   "version": "0.2.0",
   "configurations": [
-      {
-          "type": "chrome",
-          "request": "launch",
-          "name": "Launch Chrome against localhost",
-          "url": "http://localhost:5173",
-          "webRoot": "${workspaceFolder}/packages/web"
-      },
-      {
-        "type": "node",
-        "request": "launch",
-        "name": "Jest Tests",
-        "program": "${workspaceRoot}/node_modules/.bin/jest",
-        "cwd": "${workspaceFolder}/packages/web/src",
-        "envFile": "${workspaceRoot}/.env",
-        "console": "integratedTerminal",
+    {
+      "type": "chrome",
+      "request": "launch",
+      "name": "Launch Chrome against localhost",
+      "url": "http://localhost:5173",
+      "webRoot": "${workspaceFolder}/packages/web"
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Web Unit Tests",
+      "program": "${workspaceRoot}/node_modules/.bin/jest",
+      "cwd": "${workspaceFolder}/packages/web/src",
+      "envFile": "${workspaceRoot}/.env",
+      "console": "integratedTerminal",
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Lib Unit Tests",
+      "program": "${workspaceRoot}/node_modules/.bin/jest",
+      "cwd": "${workspaceFolder}/packages/lib/src",
+      "envFile": "${workspaceRoot}/.env",
+      "console": "integratedTerminal",
     }
   ]
 }

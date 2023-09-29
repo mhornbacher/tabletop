@@ -1,9 +1,8 @@
-import { Language } from "./Language";
-import { SkillType } from "./Skill";
 import { DamageType } from "./Damage";
-import { ConditionType } from "./Condition";
+import { Language } from "./Language";
+import { Skill } from "./Skills";
 
-export type StatType = "strength"
+export type Stat = "strength"
   | "dexterity"
   | "constitution"
   | "intelligence"
@@ -14,20 +13,25 @@ export interface StatBlock {
   armorClass: number;
   hitPoints: number;
   speed: number;
+  level: number;
 
   stats: {
-    [key in StatType]: number;
+    [key in Stat]: number;
   };
 
   skills: {
-    [key in SkillType]: number;
+    [key in Skill]: {
+      proficient: boolean;
+      expertise: boolean;
+    }
   };
 
   immunities: DamageType[];
-  resistances: DamageType[];
+  risistances: DamageType[];
   vulnerabilities: DamageType[];
+  conditionImmunities: string[];
 
-  conditionImmunities: ConditionType[];
+  languages: Language[];
 
   senses: {
     darkvision: number;
@@ -35,8 +39,4 @@ export interface StatBlock {
     tremorsense: number;
     truesight: number;
   };
-
-  languages: Language[];
-
-  xp: number;
 }

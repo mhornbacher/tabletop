@@ -6,7 +6,7 @@ import { LogIn } from "@blueprintjs/icons";
 import { Navbar, Button, Switch, FormGroup } from "@blueprintjs/core";
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faGithub } from '@fortawesome/free-brands-svg-icons'
+import { faGithub, faDAndD } from '@fortawesome/free-brands-svg-icons'
 
 export default function Header() {
   const {darkMode, setDarkMode} = useContext(DarkModeContext);
@@ -23,7 +23,7 @@ export default function Header() {
     <Navbar fixedToTop id="header">
 
       <Navbar.Group align="left">
-        <Navbar.Heading>🐉 TableTop</Navbar.Heading>
+        <Navbar.Heading><FontAwesomeIcon icon={faDAndD} /> TableTop</Navbar.Heading>
       </Navbar.Group>
 
       <Navbar.Group align="right">

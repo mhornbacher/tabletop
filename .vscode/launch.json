@@ -7,6 +7,15 @@
           "name": "Launch Chrome against localhost",
           "url": "http://localhost:5173",
           "webRoot": "${workspaceFolder}/packages/web"
-      }
+      },
+      {
+        "type": "node",
+        "request": "launch",
+        "name": "Jest Tests",
+        "program": "${workspaceRoot}/node_modules/.bin/jest",
+        "cwd": "${workspaceFolder}/packages/web/src",
+        "envFile": "${workspaceRoot}/.env",
+        "console": "integratedTerminal",
+    }
   ]
 }

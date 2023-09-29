@@ -17,10 +17,15 @@
     "@3d-dice/dice-box": "^1.0.10",
     "@blueprintjs/core": "^5.3.2",
     "@blueprintjs/icons": "^5.1.7",
+    "@fortawesome/fontawesome-svg-core": "^6.4.2",
+    "@fortawesome/free-brands-svg-icons": "^6.4.2",
+    "@fortawesome/free-regular-svg-icons": "^6.4.2",
+    "@fortawesome/free-solid-svg-icons": "^6.4.2",
+    "@fortawesome/react-fontawesome": "^0.2.0",
+    "lib": "file:../lib",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-router-dom": "^6.16.0",
-    "lib": "file:../lib"
+    "react-router-dom": "^6.16.0"
   },
   "devDependencies": {
     "@babel/preset-env": "^7.22.20",

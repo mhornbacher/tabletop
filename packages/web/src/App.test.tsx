@@ -1,10 +1,11 @@
 import { render } from "./test-utils"
+import { MemoryRouter } from "react-router-dom"
 import App from "./App"
 
 describe('<App/>', () => {
   it('should render button', () => {
-    const component = render(<App />)
+    const component = render(<MemoryRouter><App /></MemoryRouter>)
 
-    expect(component).not.toBeEmptyDOMElement()
+    expect(component.container).not.toBeEmptyDOMElement()
   })
 })

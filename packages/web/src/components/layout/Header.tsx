@@ -26,7 +26,7 @@ export default function Header() {
           <Switch
             innerLabel="🌞"
             innerLabelChecked="🌚" large
-            checked={darkMode}
+            checked={!!darkMode}
             onChange={onChange} />
         </FormGroup>
       </Navbar.Group>
